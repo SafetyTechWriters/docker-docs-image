@@ -1,0 +1,28 @@
+{
+  "name": "ruby-node-nokogiri-docker-image",
+  "version": "1.0.0",
+  "description": "Docker image containing ruby, node, nokogiri, and some gems & packages for jekyll use case",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairealyssa/docker-ruby-node-nokogiri.git"
+  },
+  "author": "Claire Lundeby",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "instantsearch.js": "^2.10.5",
+    "jquery": "^3.4.1",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.9.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.4.0",
+    "util": "^0.12.1"
+  }
+}
