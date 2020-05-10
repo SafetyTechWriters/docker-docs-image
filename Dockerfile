@@ -1,6 +1,6 @@
 FROM ruby:2.5.3-alpine
 
-MAINTAINER Claire Lundeby <clairelundeby@gmail.com>
+MAINTAINER Emily Rushton <emily.rushton@veeva.com>
 
 CMD ["/sbin/my_init"]
 
