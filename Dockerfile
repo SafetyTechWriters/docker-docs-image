@@ -1,4 +1,4 @@
-FROM ruby:2.4.6-alpine
+FROM ruby:2.5.3-alpine
 
 MAINTAINER Claire Lundeby <clairelundeby@gmail.com>
 
@@ -22,7 +22,6 @@ CMD ["/usr/bin/java", "-version"]
 
 COPY package.json ./
 RUN apk add --no-cache nodejs nodejs-npm \
-&& npm install gulp@4.0.2 gulp-cli@2.0.1 -g \
 && npm install
 
 # Install dependencies and gems
@@ -30,11 +29,8 @@ RUN apk add --no-cache nodejs nodejs-npm \
 COPY Gemfile ./
 
 RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev \
-&& gem install bundler -v 1.17.3 \
 && gem install bundler -v 2.0.2 \
 && bundle install \
-&& gem install html-proofer \
-&& gem install rake
 
 # Install bash
 
