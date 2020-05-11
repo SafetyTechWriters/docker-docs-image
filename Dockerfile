@@ -30,7 +30,7 @@ COPY Gemfile ./
 
 RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev \
 && gem install bundler -v 2.0.2 \
-&& bundle install \
+&& bundle install 
 
 # Install bash
 
