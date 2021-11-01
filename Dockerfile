@@ -1,8 +1,6 @@
 FROM ruby:2.5.3-alpine
 
-MAINTAINER Emily Rushton <emily.rushton@veeva.com>
-
-CMD ["/sbin/my_init"]
+LABEL maintainer="Emily Rushton emily.rushton@veeva.com"
 
 # Install python, pip, and awscli
 
@@ -16,7 +14,6 @@ pip install awscli
 # Install java 8
 
 RUN apk --update --no-cache add openjdk8
-CMD ["/usr/bin/java", "-version"]
 
 # Install node, npm & packages (apk: dependencies for gifsicle / gulp / npm packages)
 
@@ -44,4 +41,4 @@ RUN apk add --no-cache curl
 
 RUN apk add --no-cache openssh-client
 
-CMD ["bash"]
+CMD ["/sbin/my_init", "/usr/bin/java", "-version", "bash"]
