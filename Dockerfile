@@ -29,7 +29,7 @@ RUN apk add --no-cache nodejs nodejs-npm \
 COPY Gemfile ./
 
 RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev \
-&& gem install bundler -v 2.0.2 \
+&& gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" \
 && bundle install 
 
 # Install bash
