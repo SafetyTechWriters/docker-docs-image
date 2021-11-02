@@ -2,6 +2,8 @@ FROM ruby:2.5.3-alpine
 
 LABEL maintainer="Emily Rushton emily.rushton@veeva.com"
 
+CMD ["/sbin/my_init"]
+
 # Install python, pip, and awscli
 
 RUN apk add --no-cache python && \
@@ -14,6 +16,7 @@ pip install awscli
 # Install java 8
 
 RUN apk --update --no-cache add openjdk8
+CMD ["/usr/bin/java", "-version"]
 
 # Install node, npm & packages (apk: dependencies for gifsicle / gulp / npm packages)
 
@@ -25,9 +28,11 @@ RUN apk add --no-cache nodejs nodejs-npm \
 
 COPY Gemfile ./
 
-RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev \
-&& gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" \
-&& bundle install 
+RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev 
+RUN gem install bundler -v "~>1.0" 
+RUN gem install jekyll bundler  
+RUN gem install listen 
+RUN bundle install 
 
 # Install bash
 
@@ -41,4 +46,4 @@ RUN apk add --no-cache curl
 
 RUN apk add --no-cache openssh-client
 
-CMD ["/sbin/my_init", "/usr/bin/java", "-version", "bash"]
+CMD ["bash"]
