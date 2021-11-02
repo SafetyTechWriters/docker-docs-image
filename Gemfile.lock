@@ -113,10 +113,7 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.5-x64-mingw32)
-      racc (~> 1.4)
     nokogumbo (2.0.5)
-      nokogiri (~> 1.8, >= 1.8.4)
     octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -150,7 +147,6 @@ GEM
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
     verbal_expressions (0.1.5)
-    wdm (0.1.1)
     yell (2.2.2)
 
 PLATFORMS
@@ -173,7 +169,6 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown-parser-gfm
   tzinfo-data
-  wdm (>= 0.1.0)
 
 RUBY VERSION
    ruby 2.5.3p105
