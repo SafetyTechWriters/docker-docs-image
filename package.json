@@ -11,8 +11,7 @@
     "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js assets/js/custom.js -b -o assets/js/main.js",
     "dev": "npm run lint && npm run concat",
     "build": "npm run lint && npm run uglify",
-    "watch": "watch 'npm run dev' assets/js/",
-    "postinstall": "npm run copy && npm run concat"
+    "watch": "watch 'npm run dev' assets/js/"
   },
   "repository": {
     "type": "git",
