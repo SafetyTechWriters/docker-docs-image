@@ -23,7 +23,7 @@ CMD ["/usr/bin/java", "-version"]
 COPY package.json ./
 RUN apk update \
  && apk upgrade --no-cache
-RUN apk add --no-cache nodejs npm
+RUN apk add --update nodejs npm
 RUN npm install
 RUN npm rebuild node-sass
 
