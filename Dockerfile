@@ -23,7 +23,7 @@ CMD ["/usr/bin/java", "-version"]
 COPY package.json ./
 RUN apk update \
  && apk upgrade --no-cache
-RUN apk add  --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ nodejs=12.18.2-r0 npm 
+RUN apk add --no-cache nodejs npm
 RUN npm install
 RUN npm rebuild node-sass
 
