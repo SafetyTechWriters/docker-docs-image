@@ -20,9 +20,9 @@ CMD ["/usr/bin/java", "-version"]
 
 # Install node, npm & packages (apk: dependencies for gifsicle / gulp / npm packages)
 
-RUN apk add --no-cache python2
 COPY package.json ./
-RUN apk add --no-cache nodejs npm \
+RUN apk add --no-cache python2 \
+&& apk add --no-cache nodejs npm \
 && npm install
 
 # Install dependencies and gems
