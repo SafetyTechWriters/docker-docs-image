@@ -1,4 +1,4 @@
-FROM ruby:2.7.5
+FROM ruby:2.7.5-alpine
 
 LABEL maintainer="Emily Rushton emily.rushton@veeva.com"
 
