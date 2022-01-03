@@ -32,7 +32,7 @@ RUN npm rebuild node-sass
 COPY Gemfile ./
 
 RUN apk add --no-cache build-base libxml2-dev libxslt-dev ruby-json ruby-rake ruby-dev 
-RUN gem install bundler -v "~>1.0" 
+RUN gem install bundler -v "~>2.3.4" 
 RUN gem install jekyll bundler  
 RUN gem install listen 
 RUN bundle install 
