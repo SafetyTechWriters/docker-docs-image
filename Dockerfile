@@ -21,9 +21,9 @@ CMD ["/usr/bin/java", "-version"]
 # Install node, npm & packages (apk: dependencies for gifsicle / gulp / npm packages)
 
 COPY package.json ./
-RUN apk add --no-cache python2
-RUN apk add --no-cache --update nodejs nodejs-npm \
-&& npm install node-sass
+RUN apk update \
+ && apk upgrade --no-cache
+RUN apk add  --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ nodejs=12.18.2-r0 npm 
 RUN npm install
 RUN npm rebuild node-sass
 
