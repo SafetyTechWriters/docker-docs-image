@@ -22,9 +22,9 @@ CMD ["/usr/bin/java", "-version"]
 
 COPY package.json ./
 RUN apk add --no-cache python2
-RUN apk add --no-cache nodejs npm \
-&& npm install \
+RUN apk add --no-cache --update nodejs nodejs-npm \
 && npm install node-sass
+RUN npm install
 RUN npm rebuild node-sass
 
 # Install dependencies and gems
