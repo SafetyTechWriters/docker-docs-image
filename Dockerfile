@@ -4,9 +4,11 @@ LABEL maintainer="Emily Rushton emily.rushton@veeva.com"
 
 CMD ["/sbin/my_init"]
 
-# Install python3, pip, and awscli
+CMD ["python", "app.py"]
 
-RUN apk add --no-cache python3 && \
+# Install python, pip, and awscli
+
+RUN apk add --no-cache python && \
 python -m ensurepip && \
 rm -r /usr/lib/python*/ensurepip && \
 pip install --upgrade pip setuptools && \
