@@ -35,6 +35,7 @@ group :jekyll_plugins do
    gem 'jekyll-last-modified-at'
    gem 'html-proofer'
    gem 'ffi'
+   gem 'jekyll-glossary_tooltip', '~> 1.3', '>= 1.3.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -48,9 +49,6 @@ gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 # Put require=false on gem's that we don't need to import in code (cli exec only)
 
 source "https://rubygems.org"
-
-# Include dependencies from the .gemspec
-gemspec
 
 # Development dependencies
 # Should rather be here than in the .gemspec
