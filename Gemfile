@@ -1,308 +1,73 @@
-PATH
-  specs:
-    jekyll-glossary_tooltip (1.3.1)
-      jekyll (>= 3.7, < 5.0)
+source "https://rubygems.org"
+ruby RUBY_VERSION
 
-GEM
-  remote: https://rubygems.org/
-  specs:
-    activesupport (5.2.6)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
-    algolia_html_extractor (2.6.4)
-      json (~> 2.0)
-      nokogiri (~> 1.10)
-    algoliasearch (1.27.5)
-      httpclient (~> 2.8, >= 2.8.3)
-      json (>= 1.5.1)
-    appraisal (2.4.1)
-      bundler
-      rake
-      thor (>= 0.14.0)
-    ast (2.4.2)
-    backport (1.2.0)
-    benchmark (0.2.0)
-    colorator (1.1.0)
-    concurrent-ruby (1.1.9)
-    diff-lcs (1.5.0)
-    docile (1.4.0)
-    e2mmap (0.1.0)
-    em-websocket (0.5.3)
-      eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0)
-    ethon (0.15.0)
-      ffi (>= 1.15.0)
-    eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
-    faraday (1.8.0)
-      faraday-em_http (~> 1.0)
-      faraday-em_synchrony (~> 1.0)
-      faraday-excon (~> 1.1)
-      faraday-httpclient (~> 1.0.1)
-      faraday-net_http (~> 1.0)
-      faraday-net_http_persistent (~> 1.1)
-      faraday-patron (~> 1.0)
-      faraday-rack (~> 1.0)
-      multipart-post (>= 1.2, < 3)
-      ruby2_keywords (>= 0.0.4)
-    faraday-em_http (1.0.0)
-    faraday-em_synchrony (1.0.0)
-    faraday-excon (1.1.0)
-    faraday-httpclient (1.0.1)
-    faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.2.0)
-    faraday-patron (1.0.0)
-    faraday-rack (1.0.0)
-    faraday_middleware (1.2.0)
-      faraday (~> 1.0)
-    ffi (1.15.4)
-    ffi (1.15.4-x64-mingw32)
-    filesize (0.2.0)
-    forwardable-extended (2.6.0)
-    gem-release (2.2.2)
-    gh (0.18.0)
-      activesupport (~> 5.0)
-      addressable (~> 2.4)
-      faraday (~> 1.0)
-      faraday_middleware (~> 1.0)
-      multi_json (~> 1.0)
-      net-http-persistent (~> 2.9)
-      net-http-pipeline
-    highline (2.0.3)
-    html-proofer (3.19.3)
-      addressable (~> 2.3)
-      mercenary (~> 0.3)
-      nokogiri (~> 1.12)
-      parallel (~> 1.3)
-      rainbow (~> 3.0)
-      typhoeus (~> 1.3)
-      yell (~> 2.0)
-    http_parser.rb (0.8.0)
-    httpclient (2.8.3)
-    i18n (0.9.5)
-      concurrent-ruby (~> 1.0)
-    jaro_winkler (1.5.4)
-    jekyll (3.9.1)
-      addressable (~> 2.4)
-      colorator (~> 1.0)
-      em-websocket (~> 0.5)
-      i18n (~> 0.7)
-      jekyll-sass-converter (~> 1.0)
-      jekyll-watch (~> 2.0)
-      kramdown (>= 1.17, < 3)
-      liquid (~> 4.0)
-      mercenary (~> 0.3.3)
-      pathutil (~> 0.9)
-      rouge (>= 1.7, < 4)
-      safe_yaml (~> 1.0)
-    jekyll-algolia (1.7.1)
-      algolia_html_extractor (~> 2.6)
-      algoliasearch (~> 1.26)
-      filesize (~> 0.1)
-      jekyll (>= 3.6, < 5.0)
-      json (~> 2.0)
-      nokogiri (~> 1.6)
-      progressbar (~> 1.9)
-      verbal_expressions (~> 0.1.5)
-    jekyll-avatar (0.7.0)
-      jekyll (>= 3.0, < 5.0)
-    jekyll-feed (0.16.0)
-      jekyll (>= 3.7, < 5.0)
-    jekyll-gist (1.5.0)
-      octokit (~> 4.2)
-    jekyll-last-modified-at (1.3.0)
-      jekyll (>= 3.7, < 5.0)
-      posix-spawn (~> 0.3.9)
-    jekyll-livereload (0.2.2)
-      em-websocket (~> 0.5)
-      jekyll (~> 3.0)
-    jekyll-paginate (1.1.0)
-    jekyll-redirect-from (0.16.0)
-      jekyll (>= 3.3, < 5.0)
-    jekyll-sass-converter (1.5.2)
-      sass (~> 3.4)
-    jekyll-seo-tag (2.7.1)
-      jekyll (>= 3.8, < 5.0)
-    jekyll-sitemap (1.4.0)
-      jekyll (>= 3.7, < 5.0)
-    jekyll-watch (2.2.1)
-      listen (~> 3.0)
-    json (2.6.1)
-    json_pure (2.6.1)
-    kramdown (2.3.1)
-      rexml
-    kramdown-parser-gfm (1.1.0)
-      kramdown (~> 2.0)
-    launchy (2.4.3)
-      addressable (~> 2.3)
-    liquid (4.0.3)
-    listen (3.7.0)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
-    mercenary (0.3.6)
-    mini_portile2 (2.6.1)
-    minitest (5.15.0)
-    multi_json (1.15.0)
-    multipart-post (2.1.1)
-    net-http-persistent (2.9.4)
-    net-http-pipeline (1.0.1)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
-      racc (~> 1.4)
-    nokogiri (1.12.5-x64-mingw32)
-      racc (~> 1.4)
-    octokit (4.21.0)
-      faraday (>= 0.9)
-      sawyer (~> 0.8.0, >= 0.5.3)
-    parallel (1.21.0)
-    parser (3.1.0.0)
-      ast (~> 2.4.1)
-    pathutil (0.16.2)
-      forwardable-extended (~> 2.6)
-    posix-spawn (0.3.15)
-    progressbar (1.11.0)
-    public_suffix (4.0.6)
-    pusher-client (0.6.2)
-      json
-      websocket (~> 1.0)
-    racc (1.6.0)
-    rainbow (3.0.0)
-    rake (13.0.6)
-    rb-fsevent (0.11.0)
-    rb-inotify (0.10.1)
-      ffi (~> 1.0)
-    regexp_parser (2.2.0)
-    reverse_markdown (2.1.1)
-      nokogiri
-    rexml (3.2.5)
-    rouge (3.27.0)
-    rspec (3.10.0)
-      rspec-core (~> 3.10.0)
-      rspec-expectations (~> 3.10.0)
-      rspec-mocks (~> 3.10.0)
-    rspec-core (3.10.1)
-      rspec-support (~> 3.10.0)
-    rspec-expectations (3.10.1)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.10.0)
-    rspec-mocks (3.10.2)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.10.0)
-    rspec-support (3.10.3)
-    rubocop (1.24.1)
-      parallel (~> 1.10)
-      parser (>= 3.0.0.0)
-      rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
-      rexml
-      rubocop-ast (>= 1.15.1, < 2.0)
-      ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.15.1)
-      parser (>= 3.0.1.1)
-    rubocop-rake (0.6.0)
-      rubocop (~> 1.0)
-    rubocop-rspec (2.7.0)
-      rubocop (~> 1.19)
-    ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.5)
-    safe_yaml (1.0.5)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-    sawyer (0.8.2)
-      addressable (>= 2.3.5)
-      faraday (> 0.8, < 2.0)
-    simplecov (0.21.2)
-      docile (~> 1.1)
-      simplecov-html (~> 0.11)
-      simplecov_json_formatter (~> 0.1)
-    simplecov-html (0.12.3)
-    simplecov_json_formatter (0.1.3)
-    solargraph (0.44.2)
-      backport (~> 1.2)
-      benchmark
-      bundler (>= 1.17.2)
-      diff-lcs (~> 1.4)
-      e2mmap
-      jaro_winkler (~> 1.5)
-      kramdown (~> 2.3)
-      kramdown-parser-gfm (~> 1.1)
-      parser (~> 3.0)
-      reverse_markdown (>= 1.0.5, < 3)
-      rubocop (>= 0.52)
-      thor (~> 1.0)
-      tilt (~> 2.0)
-      yard (~> 0.9, >= 0.9.24)
-    thor (1.1.0)
-    thread_safe (0.3.6)
-    tilt (2.0.10)
-    travis (1.11.0)
-      faraday (~> 1.0)
-      faraday_middleware (~> 1.0)
-      gh (~> 0.13)
-      highline (~> 2.0)
-      json_pure (~> 2.3)
-      launchy (~> 2.1, < 2.5.0)
-      pusher-client (~> 0.4)
-    typhoeus (1.4.0)
-      ethon (>= 0.9.0)
-    tzinfo (1.2.9)
-      thread_safe (~> 0.1)
-    tzinfo-data (1.2021.5)
-      tzinfo (>= 1.0.0)
-    unicode-display_width (2.1.0)
-    verbal_expressions (0.1.5)
-    wdm (0.1.1)
-    webrick (1.7.0)
-    websocket (1.2.9)
-    yard (0.9.27)
-      webrick (~> 1.7.0)
-    yell (2.2.2)
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+gem "jekyll", "~> 3.9"
 
-PLATFORMS
-  ruby
-  x64-mingw32
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+# gem "minima", "~> 2.0"
 
-DEPENDENCIES
-  appraisal (~> 2.4)
-  ffi
-  gem-release (~> 2.0)
-  html-proofer
-  jekyll (~> 3.9)
-  jekyll-algolia (~> 1.0)
-  jekyll-avatar
-  jekyll-feed (~> 0.6)
-  jekyll-gist
-  jekyll-glossary_tooltip!
-  jekyll-last-modified-at
-  jekyll-livereload
-  jekyll-paginate (~> 1.1)
-  jekyll-redirect-from
-  jekyll-seo-tag
-  jekyll-sitemap
-  kramdown-parser-gfm (~> 1.1)
-  listen
-  nokogiri (~> 1.6)
-  rake (~> 13.0)
-  rspec (~> 3.0)
-  rubocop (~> 1.18)
-  rubocop-rake (~> 0.6)
-  rubocop-rspec (~> 2.4)
-  simplecov (~> 0.21)
-  solargraph
-  travis (~> 1.0)
-  tzinfo-data
-  wdm (~> 0.1.0)
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
 
-RUBY VERSION
-   ruby 2.7.5
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+   gem "kramdown-parser-gfm", "~> 1.1"
+   gem 'listen'
+   gem "jekyll-feed", "~> 0.6"
+   gem 'jekyll-paginate', '~> 1.1'
+   gem 'jekyll-seo-tag'
+   gem 'jekyll-gist'
+   gem 'nokogiri', '~> 1.6'
+   gem 'jekyll-livereload'
+   gem 'jekyll-avatar'
+   gem 'jekyll-redirect-from'
+   gem "jekyll-sitemap"
+   gem 'jekyll-algolia', '~> 1.0'
+   gem 'jekyll-last-modified-at'
+   gem 'html-proofer'
+   gem 'ffi'
+end
 
-BUNDLED WITH
-   2.3.4
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Windows install wdm
+gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+
+# frozen_string_literal: true
+
+# Put require=false on gem's that we don't need to import in code (cli exec only)
+
+source "https://rubygems.org"
+
+# Include dependencies from the .gemspec
+gemspec
+
+# Development dependencies
+# Should rather be here than in the .gemspec
+# Reference: https://github.com/rubygems/bundler/pull/7222
+# However there's an argument for using gemspec too: https://bundler.io/guides/creating_gem.html#testing-our-gem
+group :development, :test do
+  gem "appraisal", "~> 2.4", require: false
+  gem "gem-release", "~> 2.0", require: false
+  gem "rake", "~> 13.0", require: false
+  gem "solargraph", require: false
+  gem "travis", "~> 1.0", require: false
+end
+
+group :test do
+  gem "rspec", "~> 3.0"
+  gem "rubocop", "~> 1.18", require: false
+  gem "rubocop-rake", "~> 0.6", require: false
+  gem "rubocop-rspec", "~> 2.4", require: false
+  gem "simplecov", "~> 0.21"
+end
