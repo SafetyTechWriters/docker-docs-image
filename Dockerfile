@@ -8,6 +8,7 @@ CMD ["/sbin/my_init"]
 
 RUN apk add --no-cache python3 && \
 python3 -m ensurepip && \
+add --update py-pip && \
 rm -r /usr/lib/python*/ensurepip && \
 pip install --upgrade pip setuptools && \
 rm -r /root/.cache && \
