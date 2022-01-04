@@ -1,4 +1,6 @@
 FROM ruby:2.7.5-alpine
+ENV RUBY_MAJOR 2.7
+ENV RUBY_VERSION 2.7.5
 
 LABEL maintainer="Emily Rushton emily.rushton@veeva.com"
 
