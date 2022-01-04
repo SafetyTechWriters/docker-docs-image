@@ -1,7 +1,7 @@
 # docker-jekyll
 
-Docker image based on ruby:2.4.5-alpine that includes:
-- Python
+Docker image based on ruby:2.7.5-alpine that includes:
+- Python3
 - Pip
 - AWS CLI
 - Node
