@@ -6,7 +6,7 @@ CMD ["/sbin/my_init"]
 
 # Install python, pip, and awscli
 
-RUN add --update py-pip
+RUN apk add --update py-pip
 RUN apk add --no-cache python3 && \
 python3 -m ensurepip && \
 rm -r /usr/lib/python*/ensurepip && \
