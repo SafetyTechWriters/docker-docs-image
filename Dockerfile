@@ -21,7 +21,7 @@ CMD ["/usr/bin/java", "-version"]
 # Install node, npm & packages (apk: dependencies for gifsicle / gulp / npm packages)
 
 COPY package.json ./
-RUN apk add --no-cache nodejs nodejs-npm \
+RUN apk add --no-cache nodejs npm \
 && npm rebuild node-sass \
 && npm install
 
