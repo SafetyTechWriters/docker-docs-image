@@ -1,5 +1,4 @@
 PATH
-  remote: .
   specs:
     jekyll-glossary_tooltip (1.3.1)
       jekyll (>= 3.7, < 5.0)
