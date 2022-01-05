@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/ && ncp node_modules/system-font-css/ _sass/system-font-css/",
     "lint": "jshint assets/js/custom.js",
-    "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js assets/js/custom.js -m -c -o assets/js/main.js",
-    "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js assets/js/custom.js -b -o assets/js/main.js",
     "dev": "npm run lint && npm run concat",
-    "build": "npm run lint && npm run uglify",
+    "build": "npm run lint",
     "watch": "watch 'npm run dev' assets/js/"
   },
   "repository": {
@@ -26,6 +24,8 @@
   "dependencies": {
     "algoliasearch": "^3.33.0",
     "bootstrap": "^4.3.1",
+    "jquery": "1.9.1",
+    "popper.js": "latest",
     "instantsearch.js": "^3.5.1",
     "simple-jekyll-search": "^1.7.2",
     "sinon": "^1.17.7",
