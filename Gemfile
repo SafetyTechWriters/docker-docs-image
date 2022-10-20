@@ -26,7 +26,7 @@ group :jekyll_plugins do
    gem 'jekyll-paginate', '~> 1.1'
    gem 'jekyll-seo-tag'
    gem 'jekyll-gist'
-   gem 'nokogiri', '~> 1.6'
+   gem 'nokogiri', '~> 1.13'
    gem 'jekyll-livereload'
    gem 'jekyll-avatar'
    gem 'jekyll-redirect-from'
